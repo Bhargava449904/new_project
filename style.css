@@ -1,0 +1,691 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+.btn-book {
+  padding: 10px 20px;
+  background-color: #007aff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  background: url('background6.jpg') no-repeat center center/cover;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  padding: 15px 30px;
+  background-color: #2d7fff;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.circle-button {
+  width: 40px;
+  height: 40px;
+  background-color: #2d7fff;
+  border-radius: 50%;
+  border: 4px solid white;
+  cursor: pointer;
+}
+
+.bus-image img {
+  max-width: 100%;
+  border-radius: 30px;
+  height: auto;
+}
+
+.popular-destination {
+  padding: 60px;
+  text-align: center;
+}
+
+.popular-destination h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.popular-destination .subtitle {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.destination-cards {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  max-width: 320px;
+  text-align: left;
+  transition: transform 0.3s;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  position: relative;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.rating {
+  background-color: #2d7fff;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+
+.features {
+  padding: 60px;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features .subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #f5f6f8;
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card .icon {
+  width: 32px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+.wanderlust {
+  padding: 60px;
+}
+
+.wanderlust-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.wanderlust-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wanderlust-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.wanderlust-text h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.wanderlust-text p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.cta-banner {
+  margin-top: 30px;
+  background-image: url('showcase2.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-link {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+
+.stats-section {
+  padding: 60px 20px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+.stats-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stat-box {
+  background-color: #f5f6f8;
+  border-radius: 25px;
+  padding: 40px 60px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
+
+.stat-box h3 {
+  font-size: 48px;
+  color: #2680eb;
+  margin-bottom: 10px;
+}
+
+.stat-box p {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+.features {
+  padding: 80px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.features-header h2 {
+  font-size: 36px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.features-header p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.feature-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  background-color: #f8f9fc;
+  padding: 40px 30px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 40px;
+  color: #2680eb;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.card p {
+  font-size: 15px;
+  color: #555;
+}
+
+
+
+
+
+
+
+.footer {
+  background-color: #f7f8fa;
+  padding: 60px 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.footer-about {
+  flex: 1 1 250px;
+}
+
+.footer-about h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: #267eff;
+  text-decoration: none;
+}
+
+.footer-links, .footer-contact, .footer-subscribe {
+  flex: 1 1 200px;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-subscribe h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
+}
+
+.footer-contact p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-contact i {
+  margin-right: 8px;
+  color: #267eff;
+}
+
+.footer-subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-subscribe input[type="email"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.footer-subscribe button {
+  padding: 10px;
+  background-color: #267eff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+  background-color: #1869db;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 13px;
+  color: #999;
+}
+
+.footer-bottom a {
+  color: #267eff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------------- */
+/* Responsive Navbar CSS */
+
+/* Hamburger menu button */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+nav {
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 15px 30px;
+  }
+
+  .hero {
+    padding: 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .stats-container, .destination-cards, .feature-cards, .wanderlust-content, .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2d7fff;
+  }
+
+  .logo {
+    color: white;
+    font-size: 20px;
+  }
+
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #2d7fff;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    display: none;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .btn-primary {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  .circle-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .menu-toggle {
+    width: 26px;
+    height: 26px;
+  }
+
+  .menu-toggle span {
+    height: 2px;
+  }
+
+  nav {
+    top: 50px;
+    width: 160px;
+    padding: 15px;
+  }
+
+  .hero {
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .popular-destination h2,
+  .features h2,
+  .wanderlust-text h2,
+  .stats-section h2,
+  .features-header h2 {
+    font-size: 24px;
+  }
+
+  .stat-box h3 {
+    font-size: 32px;
+  }
+
+  .footer-about h2,
+  .footer-links h3,
+  .footer-contact h3,
+  .footer-subscribe h3 {
+    font-size: 16px;
+  }
+
+  .footer-subscribe input[type="email"] {
+    width: 100%;
+  }
+}
